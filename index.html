@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cab801da0e549b3a2e279264d32b483 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8cab801da0e549b3a2e279264d32b483" ></div>
+        
+</body>
+<script>    
+    
+            var map_8cab801da0e549b3a2e279264d32b483 = L.map(
+                "map_8cab801da0e549b3a2e279264d32b483",
+                {
+                    center: [53.35014, -6.266155],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb170f47473845689a412cc11d8b8220 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8cab801da0e549b3a2e279264d32b483);
+        
+    
+            var marker_5d63744d3b114477b4d30193515506a1 = L.marker(
+                [53.35014, -6.266155],
+                {}
+            ).addTo(map_8cab801da0e549b3a2e279264d32b483);
+        
+    
+            var icon_9c174c1d2a9e4230b980610df61322a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d63744d3b114477b4d30193515506a1.setIcon(icon_9c174c1d2a9e4230b980610df61322a2);
+        
+    
+        var popup_870a36d553b04dd598d8ffae3baa02a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5f3bacbc806452e88996721f8b26941 = $(`<div id="html_f5f3bacbc806452e88996721f8b26941" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>`)[0];
+            popup_870a36d553b04dd598d8ffae3baa02a9.setContent(html_f5f3bacbc806452e88996721f8b26941);
+        
+
+        marker_5d63744d3b114477b4d30193515506a1.bindPopup(popup_870a36d553b04dd598d8ffae3baa02a9)
+        ;
+
+        
+    
+    
+            var marker_8b9f484013564d309b61a2fc859f3ce9 = L.marker(
+                [53.35014, -6.266155],
+                {}
+            ).addTo(map_8cab801da0e549b3a2e279264d32b483);
+        
+    
+            var icon_605a2a09277041e3a2546a6019908ef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8b9f484013564d309b61a2fc859f3ce9.setIcon(icon_605a2a09277041e3a2546a6019908ef9);
+        
+    
+        var popup_dd2c5d623f304325be1831d3a6b90fa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89f51b2d991345338eb8b5be355a9d94 = $(`<div id="html_89f51b2d991345338eb8b5be355a9d94" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>`)[0];
+            popup_dd2c5d623f304325be1831d3a6b90fa8.setContent(html_89f51b2d991345338eb8b5be355a9d94);
+        
+
+        marker_8b9f484013564d309b61a2fc859f3ce9.bindPopup(popup_dd2c5d623f304325be1831d3a6b90fa8)
+        ;
+
+        
+    
+    
+            var marker_5faf47ffaac843ee8993dbce013d532f = L.marker(
+                [53.35014, -6.266155],
+                {}
+            ).addTo(map_8cab801da0e549b3a2e279264d32b483);
+        
+    
+            var icon_66ca58d6b8c247b58ca9c5b6e648ea69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5faf47ffaac843ee8993dbce013d532f.setIcon(icon_66ca58d6b8c247b58ca9c5b6e648ea69);
+        
+    
+        var popup_1507e9e488b142d6a7b0b6f2cc267f48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dab607975b4a40778dfa211a6bf3d5cd = $(`<div id="html_dab607975b4a40778dfa211a6bf3d5cd" style="width: 100.0%; height: 100.0%;">Some Other Location</div>`)[0];
+            popup_1507e9e488b142d6a7b0b6f2cc267f48.setContent(html_dab607975b4a40778dfa211a6bf3d5cd);
+        
+
+        marker_5faf47ffaac843ee8993dbce013d532f.bindPopup(popup_1507e9e488b142d6a7b0b6f2cc267f48)
+        ;
+
+        
+    
+</script>
